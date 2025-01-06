@@ -48,6 +48,8 @@ const MeetingModal = ({isOpen, onClose, title, className, children, handleClick,
               <Image 
                 src={buttonIcon}
                 alt="button icon"
+                height={20}
+                width={20}
               />
             )} &nbsp;
             {buttonText || 'Schedule Meeting'}
