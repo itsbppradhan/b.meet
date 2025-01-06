@@ -55,6 +55,22 @@
 
 /* ==== clerk class override ===== */
 
+/* .cl-internal-13ipea7 > :not(:first-of-type){
+  display: none;
+} */
+.cl-internal-df7v37{
+  display: none;
+}
+.cl-internal-piyvrh{
+  display: none;
+}
+.cl-internal-y44tp9{
+  display: none;
+}
+.cl-internal-16vtwdp{
+  display: none;
+}
+
 .cl-providerIcon__github{
   filter: invert(1);
 }
@@ -114,3 +130,6 @@
     width: 100%;
   }
 }
+
+
+

@@ -157,7 +157,10 @@ const MeetingTypeList = () => {
         title="Type the link here"
         className="text-center"
         buttonText="Start Meeting"
-        handleClick={() => router.push(values.link)}
+        handleClick={() => {
+          const formattedLink = values.link.startsWith('http') ? values.link : `https://${values.link}`;
+          router.push(formattedLink);
+        }}
       >
         <Input 
           placeholder='Meeting Link'
