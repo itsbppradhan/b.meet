@@ -1,14 +1,10 @@
-// @ts-nocheck
-
 'use client'
 import { useGetCalls } from '@/hooks/useGetCalls'
 import { Call, CallRecording } from '@stream-io/video-react-sdk';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import MeetingCard from './MeetingCard';
-import { url } from 'inspector';
 import Loader from './Loader';
-import Meeting from '@/app/(root)/meeting/[id]/page';
 import { useToast } from '@/hooks/use-toast';
 
 
@@ -55,7 +51,7 @@ const CallList = ({type}: {type: 'ended' | 'upcoming' | 'recordings' }) => {
   
           setRecordings(recordings);
         
-      } catch (error) {
+      } catch (_error) {
         toast({ title: 'Try again later' })
       }
 

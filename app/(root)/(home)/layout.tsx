@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import { Metadata } from 'next';
-import React, { Children, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: "B.Meet",

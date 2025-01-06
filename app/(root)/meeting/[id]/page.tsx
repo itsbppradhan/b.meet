@@ -12,7 +12,7 @@ const Meeting = ({
   }: {
     params: { id: string }
   }) => {
-    const {user, isLoaded} = useUser();
+    const {isLoaded} = useUser();
     const [isSetupComplete, setisSetupComplete] = useState(false) 
     const {call, isCallLoading} = useGetCallById(id);
 

@@ -5,7 +5,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
@@ -71,8 +70,8 @@ const MeetingRoom = () => {
 
           </div>
           <DropdownMenuContent className='border-dark-1 bg-dark-1 text-white'>
-            {['Grid', 'Speaker-Left', 'Speaker-Right'].map((item, index) => (
-              <div>
+            {['Grid', 'Speaker-Left', 'Speaker-Right'].map((item) => (
+              <div key={item}>
                 <DropdownMenuItem className='cursor-pointer' onClick={() => 
                   setLayout(item.toLocaleLowerCase() as CallLayoutType)
                 }>
