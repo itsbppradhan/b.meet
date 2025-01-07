@@ -22,7 +22,15 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "B.Meet",
   description: "Experience seamless, ultra-light, and fast video calls with our cloud-based app. Enjoy high-quality communication with minimal data usage and instant connectivity, making it the perfect solution for effortless, on-the-go conversations.",
-  icons: {icon: '/icons/logo.svg'}
+  manifest: '/manifest.json',
+  icons: {
+    icon: '/icons/logo.svg',
+    apple: [
+      { url: '/icons/icon-192x192.png' },
+      { url: '/icons/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
+  themeColor: '#1C1F2E',
 };
 
 export default function RootLayout({
@@ -40,6 +48,7 @@ export default function RootLayout({
           },
           variables: {
             colorText: '#fff',
+            colorNeutral:'#fff',
             colorPrimary: "#0E78F9",
             colorBackground: '#1c1f2e',
             colorInputBackground: '#252a41',
