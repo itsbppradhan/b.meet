@@ -10,6 +10,14 @@ With **b.meet**, that world is here. No more clunky connections, no frustrating 
 
 ---
 
+## 📱 Install b.meet as a PWA
+Want a seamless experience? Install **b.meet** as a **Progressive Web App (PWA)**:
+1. Open **b.meet** in your browser.
+2. Click the **Install** button in your address bar (or go to **More options > Install**).
+3. Enjoy **b.meet** as a standalone app!
+
+---
+
 ## ⚡ Zero-Latency Performance
 **No Waiting, No Interruptions**  
 Say goodbye to awkward silences and missed cues. With **true zero-latency communication**, conversations happen **in real-time**. Whether you’re hosting a business meeting or catching up with friends, every word lands exactly when it’s spoken.
@@ -52,12 +60,6 @@ We're offering **b.meet** completely free—no hidden fees, no gimmicks. Just a 
 No downloads, no installations—just **click, invite, and meet**.
 
 ---
-
-## 📱 Install b.meet as a PWA
-Want a seamless experience? Install **b.meet** as a **Progressive Web App (PWA)**:
-1. Open **b.meet** in your browser.
-2. Click the **Install** button in your address bar (or go to **More options > Install**).
-3. Enjoy **b.meet** as a standalone app!
 
 **b.meet**—where innovation meets human connection.
 
