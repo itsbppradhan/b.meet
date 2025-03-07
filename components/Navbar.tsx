@@ -1,16 +1,29 @@
 "use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import MobileNav from './MobileNav'
-import { SignedIn, UserButton } from '@clerk/nextjs'
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import MobileNav from "./MobileNav";
+import { SignedIn, UserButton } from "@clerk/nextjs";
+
+declare global {
+  interface Navigator {
+    windowControlsOverlay?: {
+      getBoundingClientRect: () => { left: number; right: number };
+      addEventListener: (event: string, handler: () => void) => void;
+      removeEventListener: (event: string, handler: () => void) => void;
+    };
+  }
+}
 
 const Navbar = () => {
-  const [overlay, setOverlay] = useState<{ left: number; right: number }>({ left: 0, right: 0 });
+  const [overlay, setOverlay] = useState<{ left: number; right: number }>({
+    left: 0,
+    right: 0,
+  });
 
   useEffect(() => {
-    const overlayAPI = (navigator as any)?.windowControlsOverlay;
+    const overlayAPI = navigator.windowControlsOverlay;
 
     if (overlayAPI) {
       const updateOverlay = () => {
@@ -18,22 +31,25 @@ const Navbar = () => {
         setOverlay({ left, right });
       };
 
-      overlayAPI.addEventListener('geometrychange', updateOverlay);
+      overlayAPI.addEventListener("geometrychange", updateOverlay);
       updateOverlay(); // Initial update
 
-      return () => overlayAPI.removeEventListener('geometrychange', updateOverlay);
+      return () => overlayAPI.removeEventListener("geometrychange", updateOverlay);
     }
   }, []);
 
   return (
     <nav
       className="flex fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10"
-      style={{ paddingLeft: `${overlay.left}px`, paddingRight: `${overlay.right}px` }}
+      style={{
+        paddingLeft: `${overlay.left}px`,
+        paddingRight: `${overlay.right}px`,
+      }}
     >
       {/* Draggable Region for Title Bar */}
       <div
         className="absolute left-0 right-0 top-0 bottom-0"
-        style={{ WebkitAppRegion: 'drag' } as React.CSSProperties}
+        style={{ WebkitAppRegion: "drag", appRegion: "drag" } as React.CSSProperties}
       />
 
       {/* Logo and Name */}
