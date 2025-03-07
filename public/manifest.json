@@ -36,25 +36,25 @@
     },
     {
       "src": "/screenshots/mobile/Home.jpg",
-      "sizes": "540x1024",
+      "sizes": "540x1204",
       "type": "image/jpeg",
       "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/Meeting.jpg",
-      "sizes": "540x1024",
+      "sizes": "540x1204",
       "type": "image/jpeg",
       "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/Recordings.jpg",
-      "sizes": "540x1024",
+      "sizes": "540x1204",
       "type": "image/jpeg",
       "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/PersonalRoom.jpg",
-      "sizes": "540x1024",
+      "sizes": "540x1204",
       "type": "image/jpeg",
       "form_factor": "narrow"
     }
