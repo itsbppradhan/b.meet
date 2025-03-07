@@ -1,12 +1,56 @@
 {
+  "id": "/",
   "name": "B.Meet",
   "short_name": "B.Meet",
   "description": "Experience seamless, ultra-light, and fast video calls with our cloud-based app",
+  "scope": "/",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1C1F2E",
   "theme_color": "#1C1F2E",
   "orientation": "portrait-primary",
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop/Home.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/desktop/Meeting.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/desktop/Recordings.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/desktop/PersonalRoom.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/mobile/Home.jpg",
+      "sizes": "504x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/screenshots/mobile/Meeting.jpg",
+      "sizes": "504x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/screenshots/mobile/Recordings.jpg",
+      "sizes": "504x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/screenshots/mobile/PersonalRoom.jpg",
+      "sizes": "504x1024",
+      "type": "image/jpeg"
+    }
+  ],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
