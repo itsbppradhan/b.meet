@@ -13,42 +13,50 @@
     {
       "src": "/screenshots/desktop/Home.png",
       "sizes": "1920x1080",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "/screenshots/desktop/Meeting.png",
       "sizes": "1920x1080",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "/screenshots/desktop/Recordings.png",
       "sizes": "1920x1080",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "/screenshots/desktop/PersonalRoom.png",
       "sizes": "1920x1080",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "/screenshots/mobile/Home.jpg",
-      "sizes": "504x1024",
-      "type": "image/jpeg"
+      "sizes": "540x1024",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/Meeting.jpg",
-      "sizes": "504x1024",
-      "type": "image/jpeg"
+      "sizes": "540x1024",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/Recordings.jpg",
-      "sizes": "504x1024",
-      "type": "image/jpeg"
+      "sizes": "540x1024",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
     },
     {
       "src": "/screenshots/mobile/PersonalRoom.jpg",
-      "sizes": "504x1024",
-      "type": "image/jpeg"
+      "sizes": "540x1024",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
     }
   ],
   "icons": [
